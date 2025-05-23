@@ -1,8 +1,4 @@
 .hero-container {
-  padding-bottom: 70px;
-}
-
-.hero-section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,8 +20,13 @@
   color: var(--white-color);
   overflow: hidden;
 }
+
+.hero-section {
+  padding-bottom: 70px;
+}
+
 @media (min-width: 768px) {
-  .hero-section {
+  .hero-container {
     padding: 40px;
   }
 }
