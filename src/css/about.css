@@ -18,6 +18,9 @@
   .about-header {
     text-align: center;
     margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   
   .about-title {
@@ -26,6 +29,8 @@
     font-weight: 600;
     letter-spacing: -0.6px;
     text-transform: uppercase;
+margin-bottom: 24px;
+max-width: 411px;
   }
   
   .title-color {
@@ -39,6 +44,8 @@
     line-height: 1.29;
     letter-spacing: -0.28px;
     color: var(--text-color);
+    margin-bottom: 32px;
+    max-width: 486px;
   }
   
   .about-list {
@@ -66,7 +73,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .card-front {
     border: 1px solid var(--brand-color);
     border-radius: 15px;
@@ -190,6 +197,10 @@
     }
     .about-title {
         font-size: 24px;
+        margin-bottom: 28px;
+      }
+      .about-paragraph {
+        margin-bottom: 50px;
       }
   }
   
