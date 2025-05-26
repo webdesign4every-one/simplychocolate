@@ -2,6 +2,7 @@
   padding: 20px;
   background-color: var(--bg-color);
   color: var(--white-color);
+  margin-bottom: 72px;
 }
 
 .visually-hidden {
