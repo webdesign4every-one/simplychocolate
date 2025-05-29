@@ -21,14 +21,14 @@
     
     <title>Vite App</title>
     <script type="module" crossorigin src="/simplychocolate/assets/index-8b5ab14d.js"></script>
-    <link rel="stylesheet" href="/simplychocolate/assets/index-8029ed91.css">
+    <link rel="stylesheet" href="/simplychocolate/assets/index-25a7df61.css">
   </head>
   <body>
     <header class="container header-container">
     <a href="/index.html" class="logo"
       ><span class="logo-text">SIMPLY CHOCOLATE</span>
       <svg class="logo-icon">
-        <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-logo"></use>
+        <use href="/simplychocolate/assets/icons-142094f8.svg#icon-logo"></use>
       </svg>
     </a>
     <ul class="list nav-list">
@@ -52,28 +52,28 @@
       <li class="soc-item">
         <a class="link soc-link" href="#">
           <svg class="soc-icon" width="20" height="20">
-            <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-instagram-tab"></use>
+            <use href="/simplychocolate/assets/icons-142094f8.svg#icon-instagram-tab"></use>
           </svg>
         </a>
       </li>
       <li class="soc-item">
           <a class="link soc-link" href="#">
             <svg class="soc-icon" width="20" height="20">
-              <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-twitter-tab"></use> 
+              <use href="/simplychocolate/assets/icons-142094f8.svg#icon-twitter-tab"></use> 
             </svg>
           </a>
         </li>
     </ul>
     <button class="button burger-menu" data-menu-open aria-label="Open menu">
       <svg class="burger-icon">
-        <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-menu-mob"></use>
+        <use href="/simplychocolate/assets/icons-142094f8.svg#icon-menu-mob"></use>
       </svg>
     </button>
   </div>
   <div class="sidebar is-hidden" data-menu>
     <button type="button" data-menu-close class="mob-close">
       <svg class="mob-close-icon" width="28px" height="28px">
-        <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-close"></use>
+        <use href="/simplychocolate/assets/icons-142094f8.svg#icon-close"></use>
       </svg>
     </button>
     <div class="container mob-container">
@@ -98,14 +98,14 @@
           <li class="mob-soc-item">
             <a class="link mob-soc-link" href="#">
               <svg class="mob-soc-icon" width="20" height="20">
-                <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-instagram-mob"></use>
+                <use href="/simplychocolate/assets/icons-142094f8.svg#icon-instagram-mob"></use>
               </svg>
             </a>
           </li>
           <li class="mob-soc-item">
               <a class="link mob-soc-link" href="#">
                 <svg class="mob-soc-icon">
-                  <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-twitter-mob"></use>
+                  <use href="/simplychocolate/assets/icons-142094f8.svg#icon-twitter-mob"></use>
                 </svg>
               </a>
             </li>
@@ -133,7 +133,7 @@
               >scroll down
               <span class="arrow-wrap"
                 ><svg class="arrow-icon">
-                  <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-arrow"></use></svg></span
+                  <use href="/simplychocolate/assets/icons-142094f8.svg#icon-arrow"></use></svg></span
             ></a>
           </div>
         </div>
@@ -148,7 +148,7 @@
     <ul class="benefits-list">
       <li class="benefits-item">
         <span class="benefits-wrap"><svg class="benefits-icon">
-          <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-chocolate"></use>
+          <use href="/simplychocolate/assets/icons-142094f8.svg#icon-chocolate"></use>
         </svg></span>
         <h3 class="benefits-title">Unsurpassed taste</h3>
         <p class="benefits-text">
@@ -160,7 +160,7 @@
       </li>
       <li class="benefits-item">
         <span class="benefits-wrap"><svg class="benefits-icon">
-          <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-coin"></use>
+          <use href="/simplychocolate/assets/icons-142094f8.svg#icon-coin"></use>
         </svg></span>
         <h3 class="benefits-title">Affordable price</h3>
         <p class="benefits-text">
@@ -173,7 +173,7 @@
       </li>
       <li class="benefits-item">
         <span class="benefits-wrap"><svg class="benefits-icon">
-          <use href="/simplychocolate/assets/icons-6121dc74.svg#icon-spoon"></use>
+          <use href="/simplychocolate/assets/icons-142094f8.svg#icon-spoon"></use>
         </svg></span>
         <h3 class="benefits-title">Own production</h3>
         <p class="benefits-text">
@@ -315,7 +315,116 @@
   </div>
 </section>
 
+<script>
+  document.querySelectorAll('.about-item').forEach(item => {
+    const card = item.querySelector('.card');
+    item.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+    item.addEventListener('mouseenter', () => {
+      if (!card.classList.contains('flipped')) {
+        card.classList.add('flipped');
+      }
+    });
+    item.addEventListener('mouseleave', () => {
+      if (card.classList.contains('flipped')) {
+        card.classList.remove('flipped');
+      }
+    });
+  });
+</script>
+</body>
+      <section class="how-section">
+  <div class="container">
+      <h2 class="how-title">HOW IT'S <span class="title-color">MADE?</span></h2>
+    <div class="how-content">
+      <div class="video-wrap" onclick="playVideo(this)">
+        <img class="video-cover" src="/simplychocolate/assets/video-bg-mob-426d83d6.png" alt="Preview">
+        <div class="play-button"><svg class="play-icon">
+            <use href="/simplychocolate/assets/icons-142094f8.svg#icon-play"></use>
+          </svg></div>
+        <iframe
+          class="video-iframe"
+          id="youtube-video"
+          src="https://www.youtube.com/embed/VXIsfa67PS8?autoplay=0&mute=0&controls=0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="how-text">
+        <h3>
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="how-list">
+          <li>
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li>At the same time, prepare a water bath.</li>
+          <li>Melt the butter on it.</li>
+          <li>
+            Mix the milk mixture and already liquid butter. Mix thoroughly with
+            a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li>Heat the mixture over low heat, letting it slightly boil.</li>
+          <li>
+            Pour the chocolate into special containers (and be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="top-section">
+  <div class="container">
+    <h2 class="top-title"><span class="title-color">TOP</span> SELLERS</h2>
+    <ul class="top-list">
+      <li class="top-item">
+        <img
+          class="top-image"
+          src="/simplychocolate/assets/top-beans-4acb9ce8.jpg"
+          alt="Chocolate with Cocoa Beans"
+        />
+      </li>
+      <p class="top-text ul-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <li class="top-item">
+        <img
+          class="top-image"
+          src="/simplychocolate/assets/top-bar-59b8e701.jpg"
+          alt="Chocolate with Cocoa Beans"
+        />
+      </li>
+      <li class="top-item top-item-desk">
+        <img
+          class="top-image"
+          src="/simplychocolate/assets/top-beans-4acb9ce8.jpg"
+          alt="Chocolate with Cocoa Beans"
+        />
+      </li>
+      <button class="top-button top-button-mob">Buy now</button>
+    </ul>
+    <div class="top-content">
+      <p class="top-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button class="top-button">Buy now</button>
+    </div>
+  </div>
+</section>
+
+      
     </main>
+    <footer>
+      ENOENT: no such file or directory, open '/home/runner/work/simplychocolate/simplychocolate/src/footer.html'
+    </footer>
      
   </body>
 </html>

@@ -41,5 +41,9 @@
         <symbol id="icon-twitter-tab" viewBox="0 0 32 32">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M30.667 4a14.542 14.542 0 0 1-4.187 2.04 5.975 5.975 0 0 0-6.637-1.661A5.981 5.981 0 0 0 16 10.04v1.333c-2.343.061-4.665-.459-6.759-1.513S4.68 6.297 3.333 4.379c0 0-4.667 12.954 7.333 18.287a15.519 15.519 0 0 1-9.333 2.667C13.333 32 28 25.333 28 10a5.966 5.966 0 0 0-.107-1.107A10.288 10.288 0 0 0 30.666 4z"/>
         </symbol>
+        <symbol id="icon-play" viewBox="0 0 32 32">
+            <path fill="#f5f4f4" style="fill: var(--color1, #f5f4f4)" d="M11.886 23.771v-13.714l12.8 6.857-12.8 6.857z"></path>
+            <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543s-15.543-6.959-15.543-15.543c0-8.584 6.959-15.543 15.543-15.543s15.543 6.959 15.543 15.543z"></path>
+        </symbol>
     </defs>
 </svg>
