@@ -125,3 +125,23 @@
     </ul>
   </div>
 </section>
+
+<script>
+  document.querySelectorAll('.about-item').forEach(item => {
+    const card = item.querySelector('.card');
+    item.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+    item.addEventListener('mouseenter', () => {
+      if (!card.classList.contains('flipped')) {
+        card.classList.add('flipped');
+      }
+    });
+    item.addEventListener('mouseleave', () => {
+      if (card.classList.contains('flipped')) {
+        card.classList.remove('flipped');
+      }
+    });
+  });
+</script>
+</body>

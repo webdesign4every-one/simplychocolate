@@ -1,5 +1,5 @@
 async function loadComponents() {
-  // Логика открытия/закрытия меню после загрузки хедера
+  // Открытие/закрытие меню хедера
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
@@ -17,6 +17,17 @@ async function loadComponents() {
   } else {
     console.error('Не найдены элементы меню:', refs);
   }
+}
+
+//Воспроизведение видео
+function playVideo(container) {
+  const videoId = 'youtube-video';
+  const iframe = container.querySelector('.video-iframe');
+  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&showinfo=0`;
+  iframe.style.display = 'block';
+
+  container.querySelector('.video-thumbnail').style.display = 'none';
+  container.querySelector('.custom-play-button').style.display = 'none';
 }
 
 loadComponents();
