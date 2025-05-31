@@ -1,6 +1,9 @@
+.benefits-section {
+  background-color: var(--bg-color);
+}
+
 .benefits-container {
   padding: 20px;
-  background-color: var(--bg-color);
   color: var(--white-color);
   margin-bottom: 72px;
 }

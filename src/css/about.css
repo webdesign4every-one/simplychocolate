@@ -113,7 +113,6 @@ max-width: 411px;
   }
   
   .card-back {
-    /* transform: rotateY(180deg); */
     transition: transform var(--transition);
     background-color: var(--white-color);
     color: var(--text-color);
@@ -121,10 +120,6 @@ max-width: 411px;
     z-index: 1;
   }
 
-  /* .about-item:is(:hover, :focus) .card-back {
-    transform: rotateY(0);
-  }
-   */
   .card-wrap {
     height: 100%;
     overflow: auto;
@@ -209,7 +204,7 @@ max-width: 411px;
   }
   
   /* Desktop */
-  @media (min-width: 1024px) {
+  @media (min-width: 1158px) {
     .about-list {
       flex-direction: row;
       flex-wrap: nowrap;

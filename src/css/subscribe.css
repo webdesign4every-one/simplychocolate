@@ -1,26 +1,16 @@
 .sub-section {
-  margin-bottom: 72px;
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/subscribe.jpg) lightgray 0px -481.157px / 100% 375.122% no-repeat;
   background-position: center;
   background-size: cover;
   padding: 62px 0;
-}
-@media (min-width: 768px) {
-  .sub-section {
-    margin-bottom: 100px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .sub-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-}
-
-@media (min-width: 1024px) {
-  .sub-section {
-    margin-bottom: 128px;
-  }
 }
 .sub-title {
   font-family: 'Montserrat';

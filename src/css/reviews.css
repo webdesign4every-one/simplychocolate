@@ -1,0 +1,140 @@
+.reviews-section {
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .reviews-section {
+    margin-bottom: 128px;
+  }
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reviews-title {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  max-width: 411px;
+}
+
+.title-color {
+  color: var(--brand-color);
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-card {
+  background-color: var(--white-color);
+  border: 1px solid var(--light-gray);
+  border-radius: 15px;
+  padding: 56px 18px 42px 18px;
+  max-width: 335px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 18px;
+}
+
+.review-details {
+  margin-top: 14px;
+}
+
+.review-name {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  color: var(--text-color);
+}
+
+.review-text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 128.571%;
+  letter-spacing: -0.28px;
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+}
+
+.review-button {
+  padding: 12px 20px;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+  background-color: #e07b1a;
+  color: var(--white-color);
+}
+
+/* Swiper */
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--brand-color);
+  width: 28px;
+  height: 13px;
+}
+
+/* Added */
+.review-swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+    place-items: center;
+  width: 100%;
+  padding-top: 40px;
+}
