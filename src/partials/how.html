@@ -3,7 +3,10 @@
       <h2 class="how-title">HOW IT'S <span class="title-color">MADE?</span></h2>
     <div class="how-content">
       <div class="video-wrap" onclick="playVideo(this)">
-        <img class="video-cover" src="./images/video-bg-mob.png" alt="Preview">
+        <picture>
+        <source srcset="./images/video-bg-desktop.jpg" media="(min-width: 1024px)" />
+        <source srcset="./images/video-bg-tablet.jpg" media="(min-width: 768px)" />
+        <img class="video-cover" src="./images/video-bg-mob.png" alt="Preview"></picture>
         <div class="play-button"><svg class="play-icon">
             <use href="./images/icons.svg#icon-play"></use>
           </svg></div>
