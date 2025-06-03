@@ -20,8 +20,9 @@
     />
     
 
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMPSURBVHgBnVU/TBNRGP++d02jkURkkUVy2CYaFliYIJG6wKKB4ORg66KJJhUclMQBkAmXUkendlEXJEQHSTTAQIgTZcKh2EtwKIlBTYia2rvn9713Pa4tHgdf0vS9d/fe9/3+fO8AQobMmK3VjDkMxwwR9kVb4BwaYsHOdpaOkwjDvFTJmD2GITYalnMV25k+PW5ZQXtDIYgIsaAG3bf0T0cqKnCZkqeC9h6JwM6ak4BiClrOgxx9pRf3y4CFPMD2kp5LWag4cuQwNIEISFiTXhlT4977Bw9a2kH2PwZoi7tlYk/UECVCM3asBCTsFGFsVZPv2/UPi1T9XhEYGSdUeYQwQyeoZmIpRExC9IzeTJTg/E2AcoFU3wfczGuU3Uk1V3scZy50AiHkpBrQAfLaC10pc7/0EIB/NFZr8SEvwSmAH6ESsLASwVTCdt1QXCuBXQchU8PVx4b0hvZuPSdX/Va6HUSTi1hYhwRT49GXHr9evL3jJagdzjTh2iyh2mVHWTY5KjpuFQ5FIA2R8SbMM1NRCxIWXWFl7z1NUXlT03bqnKVLRlNECL0bhv9wFpZSTqiN0RZA3rw1r3ESElx7pvhWlr10HaCjH5D5Z4f9+tbqHpOLpEuzTRTxZSaF2GDuZd8jgt5T30y1uNAH8upM/dqn7Ap+XhzgIV0fnf6G8yhyEDxhlTPcZpKJp5oKf0k+2qSUq2Jr0dQTaLqbDLd6k7h/rcaJmXphz3YQTW88K8LPHcCdNUUhuwvf3V2FP3sDtNMyHpRGoCEUgiociKJ4LvpoYQ1czytXtcV0P5Br8MOERaInVWEoxuGQ8GvAKJalm0zGBwHI59p+ZVC6xF3fF9/rTmZb6sgZ6S+3AxPUovo8lhIgJ6UPFcQG9eXmC+fjk7zxdT3J1FRsmfjfd6GpDyLp7RzaToLEy3uLu5v1/YCYi+ysX3En2aCPTuD3oBGN7BoFuDxswcr0quaehE2XOoPOCPXJtLMX+drWlx9dBdytPGz0/IkTqHMbTAABwp4oQS2YNvob/mvbY0dVz/EPSl9OIZwbKwEAAAAASUVORK5CYII=" type="image/icon-logo"/>
     <title>Vite App</title>
-    <script type="module" crossorigin src="/simplychocolate/assets/index-610d454d.js"></script>
+    <script type="module" crossorigin src="/simplychocolate/assets/index-9688881d.js"></script>
     <link rel="stylesheet" href="/simplychocolate/assets/index-9883dae8.css">
   </head>
   <body>
@@ -37,16 +38,16 @@
         <a href="/index.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">How it's made</a>
+        <a href="#how" class="nav-link how-scroll">How it's made</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Our products</a>
+        <a href="#our" class="nav-link our-scroll">Our products</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Top sellers</a>
+        <a href="#top" class="nav-link top-scroll" >Top sellers</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Chocolate is loved</a>
+        <a href="#review" class="nav-link review-scroll">Chocolate is loved</a>
       </li>
     </ul>
     <ul class="list soc-list">
@@ -340,7 +341,10 @@
       <h2 class="how-title">HOW IT'S <span class="title-color">MADE?</span></h2>
     <div class="how-content">
       <div class="video-wrap" onclick="playVideo(this)">
-        <img class="video-cover" src="/simplychocolate/assets/video-bg-mob-426d83d6.png" alt="Preview">
+        <picture>
+        <source srcset="/simplychocolate/assets/video-bg-desktop-1c624237.jpg " media="(min-width: 1024px)" />
+        <source srcset="/simplychocolate/assets/video-bg-tablet-01a67ea5.jpg " media="(min-width: 768px)" />
+        <img class="video-cover" src="/simplychocolate/assets/video-bg-mob-426d83d6.png" alt="Preview"></picture>
         <div class="play-button"><svg class="play-icon">
             <use href="/simplychocolate/assets/icons-06f96302.svg#icon-play"></use>
           </svg></div>
@@ -378,7 +382,7 @@
   </div>
 </section>
 
-      <section class="our-section">
+      <section class="our-section" id="our">
     <div class="container">
       <h2 class="our-title">
         Our <span class="title-color">Products</span>
@@ -507,16 +511,19 @@
     </div>
   </section>
 
-      <section class="top-section">
+      <section class="top-section" id="top">
   <div class="container">
     <h2 class="top-title"><span class="title-color">TOP</span> SELLERS</h2>
     <ul class="top-list">
       <li class="top-item">
+        <picture>
+          <source srcset="/simplychocolate/assets/top-beans-desktop-12b7187e.jpg " media="(min-width: 1024px)" />
+          <source srcset="/simplychocolate/assets/top-beans-tablet-3d2c2611.jpg " media="(min-width: 768px)" />
         <img
           class="top-image"
           src="/simplychocolate/assets/top-beans-4acb9ce8.jpg"
           alt="Chocolate with Cocoa Beans"
-        />
+        /></picture>
       </li>
       <p class="top-text ul-text">
         Crazy enough chocolate originates from a bean just like the coffee bean
@@ -524,16 +531,19 @@
         discovered by the Native American tribe called the Mayans.
       </p>
       <li class="top-item">
+        <picture>
+          <source srcset="/simplychocolate/assets/top-bar-desktop-5423fd2f.jpg " media="(min-width: 1024px)" />
+          <source srcset="/simplychocolate/assets/top-bar-tablet-5ed57053.jpg " media="(min-width: 768px)" />
         <img
           class="top-image"
           src="/simplychocolate/assets/top-bar-59b8e701.jpg"
           alt="Chocolate with Cocoa Beans"
-        />
+        /></picture>
       </li>
       <li class="top-item top-item-desk">
         <img
           class="top-image"
-          src="/simplychocolate/assets/top-beans-4acb9ce8.jpg"
+          src="/simplychocolate/assets/top-truffel-desktop-72b1894d.jpg"
           alt="Chocolate with Cocoa Beans"
         />
       </li>
@@ -550,7 +560,7 @@
   </div>
 </section>
 
-      <section class="reviews-section">
+      <section class="reviews-section" id="review">
   <div class="container">
     <header class="reviews-header">
       <h2 class="reviews-title">
