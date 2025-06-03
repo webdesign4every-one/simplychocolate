@@ -21,8 +21,8 @@
     
 
     <title>Vite App</title>
-    <script type="module" crossorigin src="/simplychocolate/assets/index-15c36117.js"></script>
-    <link rel="stylesheet" href="/simplychocolate/assets/index-d0918664.css">
+    <script type="module" crossorigin src="/simplychocolate/assets/index-bb99f86a.js"></script>
+    <link rel="stylesheet" href="/simplychocolate/assets/index-794831e8.css">
   </head>
   <body>
     <header class="container header-container">
@@ -530,7 +530,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <button class="review-button">Leave a review</button>
+      <button class="review-button" id="openLeaveModalBtn">Leave a review</button>
     </div>
   </div>
 </section>
@@ -702,6 +702,59 @@
   </div>
 </section>
 </div>
+      <div class="modal-leave is-hidden-leave" id="modal">
+<section class="leave-section ">
+    <div class="container leave-container">
+      <button type="button" id="closeLeaveModalBtn" class="mod-close">
+          <svg class="mod-close-icon" width="28px" height="28px">
+            <use href="/simplychocolate/assets/icons-06f96302.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="leave-title">leave a review 
+        <br>about<span class="title-color"> our chocolate</span></br></h2>
+    
+          <input
+            class="input"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+ 
+          <input
+            class="input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+  
+        <div class="phone-input">
+          <div class="country-code">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIABIAGAMBIgACEQEDEQH/xAAtAAEBAQEAAAAAAAAAAAAAAAAABwIBAQADAQEAAAAAAAAAAAAAAAAABAYDB//aAAwDAQACEAMQAAAAiPLklbSHLiCi4OeJ7Dmf/8QAIxAAAgECBQUBAAAAAAAAAAAAAQIAAwUWM2Wj4gQQFVNyov/aAAgBAQABPwBrZcnZnekWZiSSXBJJniuv9H6WLbLkjK6UirKQQQ4BBEwJqezymBNT2eUwJqezylTMf6PanmJ9Cf/EABsRAAIBBQAAAAAAAAAAAAAAAAACBBYyU3GS/9oACAECAQE/AKniZU4cqeJlThxrm2RbW2f/xAAdEQABAwUBAAAAAAAAAAAAAAAAAQQGFTFUgvAD/9oACAEDAQE/AKPHc1x2hR47muO0Esh6XQ//2Q==" alt="German flag" />
+            <span class="country-prefix">+49</span>
+          </div>
+          <div class="phone-divider"></div>
+          <input
+            class="phone-field"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+
+  
+        <textarea class="comment-input" id="comment" name="comment" placeholder="Enter text"></textarea>
+  
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </section>
+  </div>
     </main>
      
   </body>
