@@ -47,3 +47,19 @@ closeLeaveModalBtn.addEventListener('click', () => {
   leaveModal.classList.add('is-hidden-leave');
   document.body.style.overflow = '';
 });
+
+
+//Subscribe modal 
+const openSubModalBtn = document.getElementById('openSubModalBtn');
+const closeSubModalBtn = document.getElementById('closeSubModalBtn');
+const subModal = document.querySelector('.modal-sub');
+
+openSubModalBtn.addEventListener('click', () => {
+  subModal.classList.remove('is-hidden-sub');
+  document.body.style.overflow = 'hidden';
+});
+
+closeSubModalBtn.addEventListener('click', () => {
+  subModal.classList.add('is-hidden-sub');
+  document.body.style.overflow = '';
+});
