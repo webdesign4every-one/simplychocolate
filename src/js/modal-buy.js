@@ -30,3 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+// LEAVE MODAL
+const openLeaveModalBtn = document.getElementById('openLeaveModalBtn');
+const closeLeaveModalBtn = document.getElementById('closeLeaveModalBtn');
+const leaveModal = document.querySelector('.modal-leave');
+
+openLeaveModalBtn.addEventListener('click', () => {
+  leaveModal.classList.remove('is-hidden-leave');
+  document.body.style.overflow = 'hidden';
+});
+
+closeLeaveModalBtn.addEventListener('click', () => {
+  leaveModal.classList.add('is-hidden-leave');
+  document.body.style.overflow = '';
+});

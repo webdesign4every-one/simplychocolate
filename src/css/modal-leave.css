@@ -1,4 +1,4 @@
-.modal {
+.modal-leave {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,11 +11,12 @@
     height: 100vh;
     padding: 16px;
   }
-  
-  .is-hidden-leave {
+
+.is-hidden-leave {
     display: none;
   }
-.buy-container {
+
+.modal-container {
     position: relative;
   padding: 32px 24px;
   border-radius: 15px;
@@ -38,74 +39,25 @@
     stroke: var(--brand-color);
 }
 
-.buy-title {
-  text-align: center;
+.leave-container {
+    position: relative;
+    padding: 32px 24px;
+    border-radius: 15px;
+    background: var(--white-color);
+}
+
+.leave-title {
   font-family: 'Montserrat';
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.6px;
   text-transform: uppercase;
   margin-bottom: 32px;
+  line-height: 24px;
 }
 
 .title-color {
   color: var(--brand-color);
-}
-
-.product-options {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-
-.product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 8px 16px;
-  cursor: pointer;
-  background: #fff;
-}
-.product:hover, .product:focus {
-    background-color: var(--brand-color);
-}
-
-.product img {
-  width: 60px;
-  height: auto;
-
-}
-
-.weight {
-    display: flex;
-    padding: 6px 16px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 14px;
-    border-radius: 100px;
-border: 1px solid rgba(17, 17, 17, 0.10);
-background: var(--white-color);
-color: var(--text-color);
-
-font-family: 'Montserrat';
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.label-text {
-  display: block;
-  color: var(--text-color);
-  font-family: 'Montserrat';
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 116.667%;
-  letter-spacing: -0.24px;
-  margin-bottom: 8px;
 }
 
 .input {
@@ -131,8 +83,6 @@ textarea:focus {
   border-color: var(--brand-color);
   outline: none;
 }
-
-
 
 .phone-input {
     display: flex;
@@ -177,32 +127,6 @@ textarea:focus {
     background-color: rgba(17, 17, 17, 0.05);
   }
 
-.card-input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 14px;
-    border: 2px solid rgba(17, 17, 17, 0.05);
-    border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 18px;
-  }
-  
-  .card-input input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 14px;
-    background-color: transparent;
-  }
-  
-  .card-logo {
-    width: 46px;
-    height: auto;
-    margin-left: 10px;
-  }
-
 
 textarea {
   width: 100%;
@@ -239,55 +163,20 @@ textarea {
 
 
 @media screen and (min-width: 768px) {
-    .buy-container {
+    .leave-container {
       max-width: 704px;
       padding: 40px;
       border-radius: 20px;
       margin: 0 auto;
     }
   
-    .buy-title {
+    .leave-title {
       font-size: 24px;
       margin-bottom: 40px;
     }
-  
-    .product-options {
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 40px;
-    }
-  
-    .product {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      flex: 1;
-      padding: 16px;
-    }
-  
-    .product img {
-      width: 100px;
-      margin-bottom: 22px;
-    }
-  
-    .personal-info {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 18px;
-    }
-  
-    .personal-info .input {
-      width: 100%;
-      margin-bottom: 0;
-    }
-  
-    .email-info {
-      margin-bottom: 18px;
-    }
+
   
     .phone-input,
-    .card-input,
     textarea {
       margin-bottom: 24px;
     }
@@ -299,4 +188,3 @@ textarea {
       font-size: 16px;
     }
   }
-  
