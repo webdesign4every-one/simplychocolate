@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -21,8 +21,8 @@
     
 
     <title>Vite App</title>
-    <script type="module" crossorigin src="/simplychocolate/assets/index-78f670d0.js"></script>
-    <link rel="stylesheet" href="/simplychocolate/assets/index-8226e4c4.css">
+    <script type="module" crossorigin src="/simplychocolate/assets/index-610d454d.js"></script>
+    <link rel="stylesheet" href="/simplychocolate/assets/index-9883dae8.css">
   </head>
   <body>
     <header class="container header-container">
@@ -112,7 +112,7 @@
             </li>
         </ul>
     </div>
-</header> 
+</header>
     <main>
       <section class="hero-section">
   <div class="container hero-container">
@@ -673,7 +673,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
      </p>
-     <button class="sub-button">Subscribe</button>
+     <button class="sub-button open-modal-sub-btn" id="openSubModalBtn">Subscribe</button>
   </div>
 </section>
 
@@ -730,7 +730,7 @@
     </nav>
   </div>
 </footer>
- 
+
 
       <div class="modal is-hidden" id="modal">
 <section class="buy-section">
@@ -831,7 +831,7 @@
   </div>
 </section>
 </div>
-      <div class="modal-leave is-hidden-leave" id="modal">
+      <div class="modal-leave is-hidden-leave" id="modal-leave">
 <section class="leave-section ">
     <div class="container leave-container">
       <button type="button" id="closeLeaveModalBtn" class="mod-close">
@@ -884,7 +884,32 @@
     </div>
   </section>
   </div>
+      <div class="modal-sub is-hidden-sub" id="modal-sub">
+    <div class="modal-sub-wrap">
+      <button type="button" id="closeSubModalBtn" class="modal-close-btn">
+        <svg class="close-icon" width="28px" height="28px">
+          <use href="/simplychocolate/assets/icons-06f96302.svg#icon-close"></use>
+        </svg>
+      </button>
+      <img src="/simplychocolate/assets/modal-bg-83c8b7ba.jpg" alt="Chocolate" class="modal-image" />
+      <div class="modal-content">
+        <h2 class="modal-title">
+          EXPLORE OUR <span class="highlight">NEW <br>CHOCOLATE</br></span> FIRST!
+        </h2>
+        <form class="modal-form">
+          <input
+            type="email"
+            class="modal-input"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="modal-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
     </main>
-     
+    
   </body>
 </html>
