@@ -137,4 +137,5 @@
     place-items: center;
   width: 100%;
   padding-top: 40px;
+  cursor: pointer;
 }

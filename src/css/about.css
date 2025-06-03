@@ -106,6 +106,7 @@ max-width: 411px;
     display: flex;
     flex-direction: column;
     padding: 28px;
+    cursor: pointer;
   }
   
   .card-front {

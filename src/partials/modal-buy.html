@@ -1,0 +1,99 @@
+<div class="modal is-hidden" id="modal">
+<section class="buy-section">
+  <div class="container buy-container">
+    <button type="button" id="closeModalBtn" class="mod-close">
+        <svg class="mod-close-icon" width="28px" height="28px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    <div class="buy-header">
+      <h2 class="buy-title"><span class="title-color">BUY</span> NOW</h2>
+    </div>
+    <form class="buy-form">
+      <div class="product-options">
+        <label class="product">
+          <img src="./images/modal-choco-mob.png" alt="100g chocolate" />
+          <span class="weight">100 g</span>
+        </label>
+        <label class="product">
+          <img src="./images/modal-white-mob.png" alt="200g chocolate" />
+          <span class="weight">200 g</span>
+        </label>
+        <label class="product">
+          <img src="./images/modal-bar-mob.png" alt="300g chocolate" />
+          <span class="weight">300 g</span>
+        </label>
+      </div>
+
+      <label class="label-text" for="name">Personal information</label>
+      <div class="personal-info">
+        <input
+          class="input"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="input"
+          type="text"
+          name="surname"
+          placeholder="Surname"
+          required
+        />
+      </div>
+
+      <div class="email-info">
+        <label class="label-text" for="email">Email</label>
+        <input
+          class="input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <label class="label-text" for="phone">Phone number</label>
+      <div class="phone-input">
+        <div class="country-code">
+          <img src="./images/flag.jpg" alt="German flag" />
+          <span class="country-prefix">+49</span>
+        </div>
+        <div class="phone-divider"></div>
+        <input
+          class="phone-field"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+
+      <label class="label-text" for="card">Card number</label>
+      <div class="card-input">
+        <input
+          type="text"
+          id="card"
+          name="card"
+          placeholder="Enter card"
+          required
+        />
+        <img
+          src="./images/master-icon.jpg"
+          alt="Mastercard logo"
+          class="card-logo"
+        />
+      </div>
+
+      <label class="label-text" for="comment">Comment</label>
+      <textarea id="comment" name="comment" placeholder="Enter text"></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+</div>
