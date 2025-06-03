@@ -32,3 +32,25 @@ const swiper = new Swiper('.review-swiper', {
     },
   },
 });
+
+
+// Our-swiper
+const productSwiper = new Swiper('.product-swiper', {
+  modules: [Pagination],
+  direction: 'horizontal',
+  loop: false,
+  pagination: {
+    el: '.product-pagination',
+    clickable: true,
+  },
+  slidesPerView: 1,
+  spaceBetween: 16,
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

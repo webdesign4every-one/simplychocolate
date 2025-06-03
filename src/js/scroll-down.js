@@ -9,3 +9,16 @@ document.querySelector('.scroll-link').addEventListener('click', function (e) {
     behavior: 'smooth',
   });
 });
+
+//How its made
+document.querySelector('.how-scroll').addEventListener('click', function (e) {
+  e.preventDefault(); // предотвращает переход по ссылке, если это <a>
+
+  const element = document.querySelector('#how');
+  const topPosition = element.getBoundingClientRect().top + window.pageYOffset;
+
+  window.scrollTo({
+    top: topPosition,
+    behavior: 'smooth',
+  });
+});

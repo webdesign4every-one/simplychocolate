@@ -1,0 +1,98 @@
+.our-section {
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .our-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .our-section {
+    margin-bottom: 128px;
+  }
+}
+
+.our-title {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.title-color {
+  color: var(--brand-color);
+}
+
+.our-cards {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.our-card {
+  display: flex;
+  padding: 32px 52px 32px 53px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: white;
+  gap: 8px;
+  max-width: 285px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 375px) {
+    .our-card {
+        max-width: 335px;
+    }
+    
+}
+
+.card-name {
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 133.333%;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  color: rgba(17, 17, 17, 0.7);
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.667%;
+  letter-spacing: -0.24px;
+  margin-bottom: 18px;
+}
+
+.price-btn {
+  display: flex;
+  width: 94px;
+  padding: 8px 20px;
+  align-items: flex-start;
+  gap: 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--white-color);
+  color: var(--text-color);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.price-btn:hover,
+.price-btn:focus {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
